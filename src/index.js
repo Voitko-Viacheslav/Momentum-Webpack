@@ -6,3 +6,4 @@ import './sass/fon.scss'
 const clock = require('./js/clock-calendar');
 const greeting = require('./js/greeting');
 const slider = require('./js/slider');
+const weather = require('./js/weather');
