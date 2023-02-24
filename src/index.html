@@ -10,14 +10,36 @@
 
 <body>
     <header class="header">
-      <div class="player">
-        <div class="player-controls">
-          <button class="play-prev player-icon"></button>
-          <button class="play player-icon"></button>
-          <button class="play-next player-icon"></button>
+      <div class="wrapper-for-player">
+        <div class="player">
+          <audio class="audio"></audio>
+          <!-- <audio class="audio" src="./assets/sounds/Aqua Caelestis.mp3"></audio> -->
+          <div class="player-controls">
+            <button class="play-prev player-icon"></button>
+            <button class="play player-icon"></button>
+            <button class="play-next player-icon"></button>
+          </div>
+          <ul class="play-list"></ul>
+          <div class="my-player">
+            <div class="my-player-elem">
+              <div class="song-title"></div>
+              <div class="progress-bar">
+                <div class="progress"></div>
+              </div>
+              <div class="audio-on"></div>
+              <div class="volume-bar">
+                <div class="progress-volume"></div>
+              </div>
+              
+              <div class="current-time"></div>
+              <div class="duration-time"></div>
+              
+            </div>
+          </div>
         </div>
-        <ul class="play-list"></ul>
       </div>
+
+ 
       <div class="weather">
         <input type="text" class="city" />
         <i class="weather-icon owf"></i>
@@ -49,6 +71,7 @@
         <div class="author"></div>
       </div>
     </footer>
-    <script src="./index.js"></script>
+    <script type="module" src="./playList.js"></script>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>

@@ -43,7 +43,21 @@ module.exports = {
       {
         test: /\.(png|svg|jpg|jpeg|gif|ico)$/i,  // перечисляем форматы, i - регистры
         type: 'asset/resource'
-      } // свойство type: указываем что это изображение /resource
+      }, // свойство type: указываем что это изображение /resource
+
+      //! Эти не сработали строки сделал в файле audio-player.js через import 
+      {
+        test: /\.(mp3?|wav|ogg|mpe?g)$/i,
+        type: 'asset',
+        generator: {
+          filename: 'assets/sounds/[name][hash][ext]',
+        },
+      }
+
+
+
+
+
     ]
   },
   plugins: [ // свойства плагинов
